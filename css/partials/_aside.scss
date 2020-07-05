@@ -1,0 +1,127 @@
+aside {
+  width: 100vw;
+  box-sizing: border-box;
+  background-image:	linear-gradient(90deg, #bc9e82, #bda792);
+  background-color:	none;
+  border-top: 2px solid #2c1608;
+
+  h4 {
+    margin: 20px auto;
+    width: 90%;
+    font-size: 15px;
+  }
+
+}
+
+.featured-authors{
+  display: flex;
+  flex-direction: row;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+  margin-top: 15px;
+
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: #FFF;
+}
+
+.round-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgb(30, 17, 14);
+  background-size: cover;  
+}
+
+.ri-1 {
+  background-image: url("https://pbs.twimg.com/profile_images/1027602185801162753/w7GuftNT_400x400.jpg");
+}
+
+.ri-2{
+  background-image:url("https://miro.medium.com/fit/c/160/160/2*2H_4Dk0VHVGmhDdKWCBohw.jpeg");
+}
+
+.ri-3{
+  background-image:url("https://mir-s3-cdn-cf.behance.net/user/138/acda40309077.5ac74223a66e4.jpg");
+}
+
+.ri-4{
+  background-image: url("https://placekitten.com/g/300/300");
+}
+
+.img-inner-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;;
+  background-image: linear-gradient(rgba(119, 72, 54, 0.75), rgba(238, 89, 46, 0.75));
+  transform: translateY(200px);
+
+  transition:transform .75s;
+}
+
+.round-image:hover .img-inner-text {
+  transform: translateY(0);
+}
+
+.iconos {
+  height: 1.65rem;
+}
+
+ion-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.img-inner-text ion-icon:hover {
+  color: darksalmon;
+  font-size: 1.65rem;
+}
+
+@media(min-width:768px) {
+  aside {
+    width: 100vw;
+    .img-container {
+      flex-direction: row;
+
+      .tarjeta {
+        margin-right: 15px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:1024px) {
+  aside {
+    width: 1024*.15px;
+    border-left: 2px solid #2c1608;
+    border-top: 0;
+
+    .img-container {
+      flex-direction: column;
+
+      .tarjeta {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="assets/icofont/icofont.css">
   <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
 
+  
+
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -29,10 +31,16 @@
       </header>
     
       <div class="second-box">
-        <label for="toggle">&#9776;</label>
+        <label for="search" class="search-label"><a href="search_results.html"><ion-icon name="search-outline"></ion-icon>.</a></label>
+        <input type="checkbox" name="" id="search">
+        <label for="toggle" class="burger-label">&#9776;</label>
         <input type="checkbox" name="" id="toggle">
       <nav>
         <ul>
+          <li class="search-large">
+            <input type="text" name="search" id="search-large" placeholder="Buscar...">
+            <button class="submit"><a href=""><ion-icon name="search-outline"></ion-icon></a>/button>
+          </li>
           <li><a href="">Entrevista Male rey</a></li>
           <li><a href="">Destino 2</a></li>
           <li><a href="">Desafío Mercado Libre</a></li>
@@ -42,7 +50,6 @@
 
       <main>
         <section class="articles">
-
           <article>
             
             <h3><em>5/7/20</em><br>Entrevista con Malena Rey: El gran salto a la programación</h3>

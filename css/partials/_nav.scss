@@ -29,7 +29,7 @@ nav {
 }
 
 
-label {
+.burger-label {
   color: white;
   font-size: 22px;
   position: absolute;
@@ -44,6 +44,22 @@ label {
 #toggle:checked + nav {
   display: block;
   height: 240px;
+}
+
+.search-label {
+  color: white;
+  font-size: 2px;
+  position: absolute;
+  top:10px;
+  right: 10px;
+}
+
+#search {
+  display: none;
+}
+
+.search-large {
+  display: none;
 }
 
 @media(min-width:425px) {
@@ -111,6 +127,30 @@ label {
         height: 80px;
         width: 100%;
       }
+    }
+  }
+
+  .search-large {
+    display: flex;
+    flex-direction: row;
+
+
+    #search-large {
+      width: 90px;
+      height: 30px;
+      border: 0;
+      padding-left: 10px;
+      font-weight: bold;
+      transition: background-color .5s;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      height: 30px;
+      width: 20px;
     }
   }
 }
